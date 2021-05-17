@@ -6,7 +6,7 @@ class Spaceship {
 
   //constructor
   Spaceship(float x, float y) {
-    
+
     position = new PVector(x, y);
     velocity = new PVector(2, 2);
     accel = new PVector();
@@ -78,10 +78,15 @@ class Spaceship {
 
     translate(position.x, position.y);
     rotate(direction);
+
     fill(255);  
     triangle(-10, 20, 10, 20, 0, -20); 
+
+    fill(#FF680A);
     rect(-10, 5, 20, 20);
+    fill(255);
     rect(-20, 20, 40, 5);
+    fill(#0AFF76);
     rect(20, 20, -10, 10);
     rect(-20, 20, 10, 10);
 
