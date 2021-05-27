@@ -23,6 +23,8 @@ void draw() {
 
 void Pyramide(float y) {
   
+  strokeWeight(4);
+  fill(#BDB7F5);
   for(int i = 0; i <=5; i++){
     b.normalize();
     b = a.copy();
