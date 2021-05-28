@@ -9,7 +9,7 @@ void setup() {
 
 void draw() {
   background(255);
-  c = new PVector(mouseX,mouseY);
+  c = new PVector(mouseX,mouseY); // track mouse 
   Pyramide(500);
   
   /*strokeWeight(2); //grosor de las lineas
@@ -30,7 +30,7 @@ void Pyramide(float y) {
     b = a.copy();
     b.sub(c);
     b.mult(i);
-    b.limit(i*100);
+    b.limit(i*100); //que tanto se puede estirar
     
     ellipse(a.x + b.x, a.y + b.y, y - i * 100, y - i * 100); 
   
